@@ -14,6 +14,9 @@ app.get("/",function(req,res){
 app.post("/form",function(req,res){
     console.log(req.body)
 })
+app.get("/register",function(req,res){
+    res.render("register")
+})
 
 
 
