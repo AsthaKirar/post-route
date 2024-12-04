@@ -8,7 +8,7 @@ app.use(function(req,res,next){
     console.log("middleware")
     next();
 })
-app.get("/",function(req,res){
+app.post("/index",function(req,res){
     res.render("index")
 })
 app.post("/form",function(req,res){
@@ -17,8 +17,9 @@ app.post("/form",function(req,res){
 app.get("/register",function(req,res){
     res.render("register")
 })
-
-
+app.get("/object",function(req,res){
+    res.render("object")
+})
 
 
 app.listen(3000);
